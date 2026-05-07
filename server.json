@@ -1,0 +1,54 @@
+{
+  "name": "CurrencyGuard Guard Pricing",
+  "registry_id": "com.currencyguard/guard-pricing",
+  "version": "1.0.0",
+  "description": "The first payment-contingent FX protection server on MCP. Price and explain invoice-linked FX protection for SMEs within agentic cross-border payment workflows.",
+  "transport": "streamable-http",
+  "endpoint": "https://api.currencyguard.com/mcp",
+  "authentication": {
+    "required": false
+  },
+  "tools": [
+    {
+      "name": "price_guard",
+      "description": "Price a Guard \u2014 payment-contingent FX protection linked to a specific invoice or payable"
+    },
+    {
+      "name": "price_guard_extension",
+      "description": "Price an extension of an existing Guard to a later settlement date"
+    },
+    {
+      "name": "get_spot_rate",
+      "description": "Live indicative spot FX rate (GBPUSD, GBPEUR, EURUSD)"
+    },
+    {
+      "name": "get_forward_rate",
+      "description": "Indicative forward FX rate for any supported pair and tenor"
+    },
+    {
+      "name": "get_historic_best_worst",
+      "description": "25 years of historic FX best/worst performance for stress modelling"
+    },
+    {
+      "name": "resolve_settlement_date",
+      "description": "Convert a tenor (e.g. '3M', '90 days') to a valid business settlement date"
+    },
+    {
+      "name": "list_supported_currencies",
+      "description": "List supported currency pairs"
+    },
+    {
+      "name": "explain_guard_product",
+      "description": "Product information, structure and FAQs about the Guard"
+    }
+  ],
+  "publisher": {
+    "name": "CurrencyGuard",
+    "url": "https://www.currencyguard.com",
+    "email": "rudialexis@currencyguard.co.uk"
+  },
+  "links": {
+    "smithery": "https://smithery.ai/servers/currencyguard/guard-pricing",
+    "website": "https://www.currencyguard.com"
+  }
+}
